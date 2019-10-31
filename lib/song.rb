@@ -46,9 +46,8 @@ class Song
   end 
   
   def self.alphbetical
-    @@all.sort_by do |song_name| 
-      
-    
+    @@all.sort_by{ |song_name| song_name.name
+    end
   end 
   
 #binding.pry
