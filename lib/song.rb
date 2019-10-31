@@ -36,7 +36,7 @@ class Song
   end
   
   def self.find_or_create_by_name(song_name)
-    
+    @@all.find{ |x| x.name == song_name} #returns matching instance of the song 
     
   end 
   
