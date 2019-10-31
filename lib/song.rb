@@ -24,9 +24,11 @@ class Song
     song # returns name of song 
   end
   
-  def self.create_by_name
+  def self.create_by_name(song_name) #takes in a string name of song
+    song = self.new
     
-  
+    @@all << song #saves all new instances in class variable
+    song # returns the instance 
   end
   
 #binding.pry
