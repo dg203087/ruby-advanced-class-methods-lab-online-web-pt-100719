@@ -18,10 +18,10 @@ class Song
     song # returns the instance 
   end 
   
-  def self.new_by_name(song_name)
+  def self.new_by_name(song_name) #takes in a string name of song
     song = self.new 
-    song.name = song_name
-    
+    song.name = song_name 
+    song
   end
   
 #binding.pry
