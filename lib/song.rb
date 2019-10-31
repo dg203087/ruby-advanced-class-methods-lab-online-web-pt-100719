@@ -13,7 +13,7 @@ class Song
   end
   
   def self.create
-    Song.nwe
+    song = self.new
     @all << 
   end 
   
