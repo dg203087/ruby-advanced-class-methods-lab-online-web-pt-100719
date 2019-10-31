@@ -26,7 +26,7 @@ class Song
   
   def self.create_by_name(song_name) #takes in a string name of song
     song = self.new
-    
+    song.name = song_name
     @@all << song #saves all new instances in class variable
     song # returns the instance 
   end
