@@ -64,7 +64,7 @@ class Song
       #splits input and sets the second instance in the array (name of song) equal to song.name. Removes the file type
     song.artist_name = (file_name.split(" - ")[0]) 
       #splits input and sets the first instance in the array (artist name) equal to artist_name 
-    @@all << song 
+    @@all << song #adds everything back into the class variable
     song 
   end 
   
