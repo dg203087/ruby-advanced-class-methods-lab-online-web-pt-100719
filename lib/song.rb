@@ -50,6 +50,17 @@ class Song
   end 
   
   def self.new_from_filename(file_name)
+    attr_accessor :artist :name :file
+    
+    song = file_name.split(\n) #split into array of each part of data
+    info = song.collect do |x|
+      data = x.split(", ")
+      artist = data[0]
+      name = data[1]
+      file = data[2]
+      
+      
+    end
     
   end 
 
