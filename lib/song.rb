@@ -45,7 +45,10 @@ class Song
     self.find_by_name(song_name) || self.create_by_name(song_name)
   end 
   
-  
+  def self.alphbetical
+    @@all.sort_by(a...z)
+    
+  end 
   
 #binding.pry
 end
