@@ -12,7 +12,10 @@ class Song
     self.class.all << self
   end
   
-  
+  def self.create
+    Song.nwe
+    @all << 
+  end 
   
   
 #binding.pry
