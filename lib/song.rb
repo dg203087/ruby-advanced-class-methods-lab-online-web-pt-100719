@@ -67,7 +67,6 @@ class Song
     @@all << song 
     song 
   end 
-  end 
   
   def self.destroy_all()
     #reset @@all class variable to an empty array / deleting all song instances
