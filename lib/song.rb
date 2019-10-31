@@ -41,9 +41,11 @@ class Song
     #else
     #  self.find_by_name(name)
     #end
-    #refactor
+    #refactor: do this (if it is true) or that (if the first is not true)
     self.find_by_name(song_name) || self.create_by_name(song_name)
   end 
+  
+  
   
 #binding.pry
 end
