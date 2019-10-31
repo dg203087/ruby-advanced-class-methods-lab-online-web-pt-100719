@@ -46,7 +46,8 @@ class Song
   end 
   
   def self.alphbetical
-    @@all.sort_by(a...z)
+    @@all.sort_by do |song_name| 
+      
     
   end 
   
