@@ -51,7 +51,7 @@ class Song
   
   def self.new_from_filename(file_name)
     song = self.new
-    song.name = (song_name.split(" - ")[1].chomp(".mp3")) 
+    song.name = (file_name.split(" - ")[1].chomp(".mp3")) 
       #splits input and sets the second instance in the array (name of song) equal to song.name. Removes the file type
     song.artist_name = (song_name.split(" - ")[0]) 
       #splits input and sets the first instance in the array (artist name) equal to artist_name 
