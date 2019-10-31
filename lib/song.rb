@@ -20,7 +20,7 @@ class Song
   
   def self.new_by_name(song_name) #takes in a string name of song
     song = self.new 
-    song.name = song_name 
+    song.name = song_name #sets name of song to the string 
     song
   end
   
