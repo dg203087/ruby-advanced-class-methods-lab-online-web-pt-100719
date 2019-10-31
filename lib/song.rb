@@ -36,8 +36,11 @@ class Song
   end
   
   def self.find_or_create_by_name(song_name)
-    @@all.find{ |x| x.name == song_name} #returns matching instance of the song 
-    
+    if self.find_by_name(name) == nil 
+      self.create_by_name(name)
+    else
+      self.find_by_name(name)
+    end
   end 
   
 #binding.pry
